@@ -15,10 +15,11 @@ $txt = file_get_contents($name);
 $arr = explode("\n",$txt);
 foreach($arr as $v)
 {
-	if(stripos($v,'.CC') && stripos($v, "-")===false && stripos($v, $data))
+	$v = strtolower($v);
+	if(stripos($v,'.cc') && stripos($v, "-")===false && stripos($v, $data))
 	{
 		$dn=explode(":", $v)[0];
-		$dnBody = str_replace(".CC", "", $dn);
+		$dnBody = str_replace(".cc", "", $dn);
 		if($strType == 1 && is_numeric($dnBody))
 		{
 			echo showDomain($dn,$num);
