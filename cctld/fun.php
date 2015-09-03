@@ -58,3 +58,16 @@ function showDomain($dn,$num)
 	}
 	return $myDn;
 }
+
+function getAddress($domain,$address)
+{
+	$addressArr = explode('|', $address);
+	if(array_search($domain, $addressArr) !== FALSE)
+	{
+		return TRUE;
+	}
+	else
+	{
+		return FALSE;
+	}
+}

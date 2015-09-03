@@ -6,7 +6,7 @@ $name =  isset($argv[1]) ?$argv[1] :false;//文件名
 $data =  isset($argv[2]) ?$argv[2] :false;//日期
 if($name==false)
 {
-	echo "how to use :\n php index.php filename date length domainType(1:纯数字,2:纯字母,3:声母4：双拼 10:all)";
+	echo "how to use :\n php index.php filename date length domainType(1:纯数字,2:纯字母,3:声母4：双拼 5:地名 10:all)";
 	exit;
 }
 $num =  isset($argv[3]) ?$argv[3] :20;//长度
@@ -50,6 +50,13 @@ foreach($arr as $v)
 		{
 			$py = pinyinSplit($dnBody,$domainPinyin);
 			if($py && (count($py) == $num))
+			{
+				echo $dn."\n";
+			}
+		}
+		if($strType == 5)
+		{
+			if(getAddress($dnBody,$domainAddress))
 			{
 				echo $dn."\n";
 			}
