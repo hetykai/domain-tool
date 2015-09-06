@@ -1,5 +1,5 @@
 <?php
-$sm = 'a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|zh|ch|sh';//声母
+$sm = 'b|p|m|f|d|t|n|l|g|k|h|j|q|x|zh|ch|sh|r|z|c|s|y|w';//声母
 $domainPinyin='niang|nian|niao|ning|nie|nin|niu|ni|nuan|nun|nuo|nu|nve|nv|chuang|shuang|zhuang|chang|cheng|chong|chuai|chuan|guang|huang|jiang|jiong|kuang|liang|qiang|qiong|shang|sheng|'.
 					'shuai|shuan|xiang|xiong|zhang|zheng|zhong|zhuai|zhuan|bang|beng|bian|biao|bing|cang|ceng|chai|chan|chao|chen|chou|chua|chui|'.
 					'chun|chuo|cong|cuan|dang|deng|dian|diao|ding|dong|duan|fang|feng|fiao|gang|geng|gong|guai|guan|hang|heng|hong|huai|huan|jian|'.
