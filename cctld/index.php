@@ -20,7 +20,7 @@ foreach($arr as $v)
 	{
 		$dn=explode(":", $v)[0];
 		$dnBody = str_replace(".cc", "", $dn);
-		if($strType == 1 && is_int($dnBody))
+		if($strType == 1 && true==preg_match("/^[0-9]+$/",$dnBody))
 		{
 			echo showDomain($dn,$num);
 		}
